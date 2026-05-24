@@ -1,0 +1,189 @@
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 1050px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.navigation-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.nav-btn {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.nav-btn.secondary {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  border-color: #c7d2fe;
+}
+
+.nav-btn.secondary:hover {
+  background-color: #c7d2fe;
+}
+
+.habit-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.habit-form input {
+  flex: 1;
+  padding: 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.habit-form input:focus {
+  border-color: #6366f1;
+}
+
+.habit-form button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.habit-form button:hover {
+  background-color: #4f46e5;
+}
+
+.grid-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.habit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.habit-table th, .habit-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.habit-table th {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.today-header {
+  color: #4f46e5 !important;
+  position: relative;
+}
+
+.today-badge {
+  display: block;
+  font-size: 9px;
+  background: #6366f1;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+  width: max-content;
+  margin: 2px auto 0 auto;
+}
+
+.today-cell {
+  background-color: #f5f3ff;
+}
+
+.future-cell {
+  background-color: #fafafa;
+  opacity: 0.6;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.habit-name {
+  font-weight: 600;
+  color: #1e293b;
+  min-width: 180px;
+}
+
+.streak-count span {
+  font-weight: 700;
+  color: #c2410c;
+  background: #fff7ed;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ffedd5;
+}
+
+.delete-btn {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background-color: #fca5a5;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #6366f1;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #64748b;
+}
